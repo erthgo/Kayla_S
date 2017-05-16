@@ -24,17 +24,14 @@
 		// Print info
 		alert(curl(addr));
 		*/
-		<script>
-			var ip;
-			alert("H1");
-			var getip = function(ipobj) {
+		var ip;
+		alert("H1");
+		var getip = function(ipobj) {
 			ip = ipobj['ip'];
 			alert("H2");
 			alert(ip);
-		};
-		</script>
-		<script src="https://api.ipify.org?format=jsonp&callback=getip"></script>
-
+	};
 		
 	</script>
+	<script src="https://api.ipify.org?format=jsonp&callback=getip"></script>
 </html>
