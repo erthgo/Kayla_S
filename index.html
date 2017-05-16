@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-	:D 4
+	:D 1
 	
 	<script>
 
-		/*
 		// Curl a website
 		function curl( site ) {
 			var xmlHttp = new XMLHttpRequest();
@@ -17,24 +16,11 @@
 		alert("HI");
 
 		// Get the ip and create url
-		var ip = curl("http://icanhazip.com").trim();
-		alert(ip);
-		var addr = "http://www.geoplugin.net/json.gp?ip=" + ip;
+		var ip = curl("https://icanhazip.com").trim();
+		var addr = "https://freegeoip.net/json/" + ip;
 
 		// Print info
 		alert(curl(addr));
-		*/
-		var ip;
-		alert("H1");
-		var getip = function(ipobj) {
-			alert("H2");
-			alert(ipobj);
-			alert("H2.5");
-			ip = ipobj['ip'];
-			alert("H3");
-			alert(ip);
-	};
-		
+  
 	</script>
-	<script src="https://api.ipify.org?format=jsonp&callback=getip"></script>
 </html>
