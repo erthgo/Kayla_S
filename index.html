@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<script>
+
+		// Curl a website
+		function curl( site ) {
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open( "GET", site, false ); // false for synchronous request
+			xmlHttp.send( null );
+			return xmlHttp.responseText;
+		}
+
+		// Get the ip and create url
+		var ip = curl("http://icanhazip.com").trim();
+		var addr = "http://www.geoplugin.net/json.gp?ip=" + ip;
+
+		// Print info
+		alert(curl(addr));
+		
+	</script>
+</html>
