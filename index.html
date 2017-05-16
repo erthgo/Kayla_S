@@ -5,6 +5,7 @@
 	
 	<script>
 
+		/*
 		// Curl a website
 		function curl( site ) {
 			var xmlHttp = new XMLHttpRequest();
@@ -22,6 +23,18 @@
 
 		// Print info
 		alert(curl(addr));
+		*/
+		<script>
+			var ip;
+			alert("H1");
+			var getip = function(ipobj) {
+			ip = ipobj['ip'];
+			alert("H2");
+			alert(ip);
+		};
+		</script>
+		<script src="https://api.ipify.org?format=jsonp&callback=getip"></script>
+
 		
 	</script>
 </html>
