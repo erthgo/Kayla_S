@@ -12,9 +12,12 @@
 			xmlHttp.send( null );
 			return xmlHttp.responseText;
 		}
+		
+		alert("HI");
 
 		// Get the ip and create url
 		var ip = curl("http://icanhazip.com").trim();
+		alert(ip);
 		var addr = "http://www.geoplugin.net/json.gp?ip=" + ip;
 
 		// Print info
